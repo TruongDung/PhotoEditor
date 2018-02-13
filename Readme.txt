@@ -4,3 +4,4 @@ Main function
 + Edit image (like instagram)
 + Login: Facebook, twitter
 + View and edit 
++ test
