@@ -1,0 +1,244 @@
+
+
+body {
+	/* padding: 40px; */
+	/*padding-top: 95px;*/
+}
+
+h1 {
+	text-align: center;
+}
+
+#loginDiv {
+	text-align: right;
+}
+
+#uploadDiv {
+	text-align: center;
+	margin-left: -215px;
+	padding-top: 3px;
+    margin-bottom: -13px;
+}
+
+#editor {
+	float: right;
+	width: 31%;
+	padding: 20px 17px;
+	display: none;
+    min-height: 630px;
+    position: relative;
+}
+
+#imageStage {
+	/* width: 67%; */
+	text-align: center;
+	/* border: 2px solid purple; */
+}
+
+#imageToEdit {
+	display: none;
+	width: 67%;
+}
+
+canvas {
+	/* border: 2px solid green; */
+	/* height: 600px; */
+	/* width: 80%; */
+	display: none;
+}
+
+
+ul#editMode {
+	list-style-type: none;
+	padding: 0;
+	margin-top: 0;
+	text-align: center;
+}
+
+ul#editMode li {
+	display: inline-block;
+	padding: 5px 15px;
+	cursor: pointer;
+	width: 46%;
+    font-size: 12pt;
+}
+
+#editorControls {
+	display: none;
+	padding-left: 16px;
+}
+
+#uploadedFile {
+	display: none;
+}
+
+#editorPresets {
+	text-align: center;
+}
+
+.sampleImage {
+	display: inline-block;
+	width: 130px;
+	height: 71px;
+	background-size: cover;
+	cursor: pointer;
+	margin-bottom: -1px;
+}
+
+.presetName {
+	display: inline-block;
+	width: 133px;
+	text-align: center;
+	font-family: billabong, 'billabongregular';
+    font-size: 21px;
+    margin-bottom: -2px;
+}
+
+.willow {
+	-webkit-filter: saturate(0.02) contrast(0.85) brightness(1.2) sepia(0.02);
+	filter: saturate(0.02) contrast(0.85) brightness(1.2) sepia(0.02);
+}
+
+.walden {
+	-webkit-filter: sepia(0.35) contrast(0.9) brightness(1.1) hue-rotate(-10deg) saturate(1.5);
+	filter: sepia(0.35) contrast(0.9) brightness(1.1) hue-rotate(-10deg) saturate(1.5);
+}
+
+.valencia {
+	-webkit-filter: sepia(0.15) saturate(1.5) contrast(0.9);
+	filter: sepia(0.15) saturate(1.5) contrast(0.9);
+}
+
+.toaster {
+	-webkit-filter:sepia(0.4) saturate(2.5) hue-rotate(-30deg) contrast(0.67);
+	filter:sepia(0.4) saturate(2.5) hue-rotate(-30deg) contrast(0.67);
+}
+
+.sierra {
+	-webkit-filter: contrast(0.8) saturate(1.2) sepia(0.15);
+	filter: contrast(0.8) saturate(1.2) sepia(0.15);
+}
+
+.nashville {
+	-webkit-filter: sepia(0.4) saturate(1.5) contrast(0.9) brightness(1.1) hue-rotate(-15deg);
+	filter: sepia(0.4) saturate(1.5) contrast(0.9) brightness(1.1) hue-rotate(-15deg);
+}
+
+.lofi {
+	filter: contrast(1.4) brightness(0.9) sepia(0.05);
+	-webkit-filter: contrast(1.4) brightness(0.9) sepia(0.05);
+}
+
+.kelvin {
+	filter: sepia(0.4) saturate(2.4) brightness(1.3) contrast(1);
+	-webkit-filter: sepia(0.4) saturate(2.4) brightness(1.3) contrast(1);
+}
+
+.rise {
+	-webkit-filter: saturate(1.4) sepia(0.25) hue-rotate(-15deg) contrast(0.8) brightness(1.1);
+	filter: saturate(1.4) sepia(0.25) hue-rotate(-15deg) contrast(0.8) brightness(1.1);
+}
+
+.earlybird {
+	-webkit-filter: sepia(0.4) saturate(1.6) contrast(1.1) brightness(0.9) hue-rotate(-10deg);
+	filter: sepia(0.4) saturate(1.6) contrast(1.1) brightness(0.9) hue-rotate(-10deg);
+}
+
+.xpro2 {
+	-webkit-filter: contrast(1.3) brightness(0.8) sepia(0.3) saturate(1.5) hue-rotate(-20deg);
+	filter: contrast(1.3) brightness(0.8) sepia(0.3) saturate(1.5) hue-rotate(-20deg);
+}
+
+.y1977 {
+	-webkit-filter: sepia(0.5) hue-rotate(-30deg) saturate(1.2) contrast(0.8);
+	filter: sepia(0.5) hue-rotate(-30deg) saturate(1.2) contrast(0.8);
+}
+
+
+input[type="file"] {
+	display: none;
+	cursor: pointer;
+	opacity: 0;
+}
+
+#lblUpload {
+	cursor: pointer;
+	color: #AAA;	
+}
+
+#processDiv {
+	text-align: center;	
+	position: absolute;
+    width: 93%;
+    bottom: 16px;
+}
+
+.bottom-command {
+	width: 93%;
+	margin: 2px 0;
+    font-size: 14pt;
+}
+
+input[type='range'] {
+	cursor: pointer;
+    display: inline;
+    width: 71%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    
+    margin: 2px 0;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+    
+    margin: 2px 0;
+    
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+    
+    margin: 2px 0;
+}
+
+.factor-label {
+	font-size: 13pt;
+    display: inline-block;
+    width: 25%;
+}
+
+
+#uploadImageHint {
+	border: 2px dotted #999;
+    height: 395px;
+    margin-top: 50px;
+    padding-top: 150px;
+    opacity: 0.7;
+}
+
+#uploadImageHint p {
+	font-size: 30pt;
+	text-align: center;
+	margin-left: -160px;
+	color: #999;
+}

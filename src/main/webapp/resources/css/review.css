@@ -1,0 +1,136 @@
+
+.gallery {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+}
+
+.gallery figure {
+  -ms-flex-preferred-size: 33.333%;
+      flex-basis: 33.333%;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.gallery figure img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.gallery figure figcaption {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  opacity: 0;
+  overflow: auto;
+}
+
+.imginside {
+	margin-top: 100px; /* Location of the box */
+}
+
+.popup.pop {
+  opacity: 1;
+  overflow-y: hidden;
+}
+.popup.pop figure {
+  opacity: 1;
+}
+.popup figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 30px;
+}
+.popup figure img {
+  position: relative;
+  z-index: 2;
+  border-radius: 15px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 6px 30px rgba(0, 0, 0, 0.4);
+}
+.popup figure figcaption {
+  position: absolute;
+  bottom: 50px;
+  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.78));
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.78));
+  z-index: 3;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  padding: 100px 20px 20px 20px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  /* background-color: red; */
+}
+
+.popup figure figcaption small {
+  font-size: 11px;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 12px;
+  text-indent: 3px;
+  opacity: .7;
+  letter-spacing: 1px;
+}
+.popup figure .shadow {
+  position: relative;
+  z-index: 1;
+  top: -15px;
+  margin: 0 auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 98%;
+  height: 50px;
+  opacity: .6;
+  -webkit-filter: blur(15px) contrast(2);
+          filter: blur(15px) contrast(2);
+}
+
+/* #photosContainer {
+    margin-left: -165px;
+} */
+
+.downloadImgLeft {
+	float: left;
+}
+
+.downloadImgLeft a:hover {
+	text-decoration: none;
+}
+
+.downloadImgRight {
+	float: right;
+}
+
+.downloadImgRight a:hover {
+	text-decoration: none;
+}
+
+#shareImg {
+	cursor: pointer;
+}
+
+.image-command {
+	cursor: pointer;
+}
+
+#downloadImg {
+	color: inherit;
+	text-decoration: none;
+}
+
